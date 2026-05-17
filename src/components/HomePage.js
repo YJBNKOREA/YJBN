@@ -76,7 +76,7 @@ export function renderHomePage(content) {
         </div>
       </section>
 
-      <section id="about" class="content-section about-layout">
+      <section id="about" class="content-section image-backed-section about-layout">
         ${renderSectionHeader(sections.about)}
         <div class="about-showcase reveal-card">
           <div class="about-visual">${renderVisual(visuals.about)}</div>
@@ -86,7 +86,7 @@ export function renderHomePage(content) {
         </div>
       </section>
 
-      <section id="brands" class="content-section muted-section">
+      <section id="brands" class="content-section image-backed-section muted-section">
         ${renderSectionHeader(sections.brands)}
         <div class="brand-grid">
           ${brands
@@ -107,7 +107,7 @@ export function renderHomePage(content) {
         </div>
       </section>
 
-      <section id="products" class="content-section product-section">
+      <section id="products" class="content-section image-backed-section product-section">
         ${renderSectionHeader(sections.products)}
         <div class="product-showcase reveal-card">
           <div>${renderVisual(visuals.products)}</div>
@@ -115,7 +115,7 @@ export function renderHomePage(content) {
         </div>
       </section>
 
-      <section id="rd" class="content-section split-section">
+      <section id="rd" class="content-section image-backed-section split-section">
         ${renderSectionHeader(sections.rd)}
         <div class="timeline-wrap reveal-card">
           <div class="documentation-visual">${renderVisual(visuals.documentation)}</div>
@@ -133,12 +133,12 @@ export function renderHomePage(content) {
         </div>
       </section>
 
-      <section id="oem" class="content-section muted-section">
+      <section id="oem" class="content-section image-backed-section muted-section">
         ${renderSectionHeader(sections.oem)}
         <div class="process-grid">${renderCards(partnershipSteps, 'process-card')}</div>
       </section>
 
-      <section id="contact" class="content-section contact-section">
+      <section id="contact" class="content-section image-backed-section contact-section">
         <div class="reveal-card">
           ${renderSectionHeader(sections.contact)}
           <dl class="contact-list">
