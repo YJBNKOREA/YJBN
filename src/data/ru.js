@@ -1,0 +1,137 @@
+export const ru = {
+  locale: 'ru',
+  company: {
+    shortName: 'YJBN',
+    legalName: 'YJBN Co., Ltd.',
+    tagline: 'Global K-Beauty Partner',
+    footerTitle: 'Корейская экспертиза в beauty-сегменте для международного B2B-роста.',
+    footerDescription:
+      'YJBN объединяет бренд-стратегию, разработку продуктов, R&D-документацию и опыт международной дистрибуции для долгосрочного сотрудничества.',
+  },
+  navigation: [
+    { label: 'О компании', href: '#about' },
+    { label: 'Бренды', href: '#brands' },
+    { label: 'Продукты', href: '#products' },
+    { label: 'R&D', href: '#rd' },
+    { label: 'Глобально', href: '#global' },
+    { label: 'Контакты', href: '#contact' },
+  ],
+  languages: [
+    { label: 'EN', href: '/', locale: 'en' },
+    { label: 'KR', href: '/ko/', locale: 'ko' },
+    { label: '中文', href: '/zh/', locale: 'zh' },
+    { label: 'RU', href: '/ru/', locale: 'ru' },
+    { label: 'VI', href: '/vi/', locale: 'vi' },
+  ],
+  labels: {
+    primaryCta: 'Обсудить OEM/ODM/OBM',
+    secondaryCta: 'Посмотреть бренды',
+    coreCapabilities: 'Ключевые компетенции YJBN',
+    contactInfo: 'Контактная информация',
+    address: 'Адрес',
+    email: 'Email для бизнеса',
+    phone: 'Телефон',
+    explore: 'Навигация',
+    copyright: 'All rights reserved.',
+  },
+  form: {
+    aria: 'Форма B2B-запроса',
+    company: 'Компания',
+    companyPlaceholder: 'Название компании',
+    name: 'Контактное лицо',
+    namePlaceholder: 'Ваше имя',
+    email: 'Email',
+    emailPlaceholder: 'name@company.com',
+    inquiryType: 'Тип запроса',
+    options: ['OEM/ODM/OBM', 'Экспорт / Дистрибуция', 'Бренд-партнерство', 'Другое'],
+    message: 'Сообщение',
+    messagePlaceholder: 'Укажите рынок, категорию продукта, ориентировочный объем, сроки и требования к документам.',
+    submit: 'Подготовить email-запрос',
+    note: 'Форма подготовлена для будущей интеграции с CRM/API. Сейчас она формирует email-запрос.',
+    subjectPrefix: '[YJBN B2B запрос]',
+    unnamedCompany: 'Компания не указана',
+    mailBodyLabels: { company: 'Компания', name: 'Контактное лицо', email: 'Email', type: 'Тип запроса', message: 'Сообщение' },
+  },
+  contact: {
+    address: '13, Bonggol-gil 81beon-gil, Gwangju-si, Gyeonggi-do, Republic of Korea',
+    email: 'contact@yjbn.co.kr',
+    phone: '+82-31-000-0000',
+    phoneHref: '+82310000000',
+  },
+  stats: [
+    { value: 'K-Beauty', label: 'Корейская экспертиза в уходе за волосами и кожей головы' },
+    { value: 'B2B', label: 'Импортеры, дистрибьюторы и retail-партнеры' },
+    { value: 'OEM/ODM/OBM', label: 'От продуктовой идеи до бренд-запуска' },
+  ],
+  sections: {
+    hero: {
+      eyebrow: 'YJBN Co., Ltd. Official Website',
+      title: 'Корейская K-Beauty компания для международных партнерств в hair care',
+      description:
+        'YJBN развивает бренды CELLREBORN, Hairbest и BeautyLabs, предлагая косметические решения для ухода за волосами и кожей головы международным байерам, дистрибьюторам и OEM/ODM/OBM-партнерам.',
+    },
+    about: {
+      eyebrow: 'About YJBN',
+      title: 'Брендовый подход к продуктам с доверием к корейской beauty-экспертизе',
+      description:
+        'YJBN соединяет продуктовую разработку, управление брендами, каналовую стратегию и экспортную коммуникацию для практичного выхода на рынки.',
+      points: [
+        'Мы придерживаемся корректных косметических формулировок: снижение проявлений выпадения волос, уход за состоянием кожи головы, поддержание ухоженного вида волос.',
+        'Роли брендов разделены так, чтобы партнеры могли выбирать портфель под retail, salon, e-commerce или дистрибуцию.',
+        'Структура сайта подготовлена для английского, корейского, китайского, русского и вьетнамского языков; китайский блок легко отделить для локального хостинга в Китае.',
+      ],
+    },
+    brands: {
+      eyebrow: 'Brand Portfolio',
+      title: 'Брендовая экосистема YJBN для B2B-развития',
+      description: 'Мы объединяем потребительскую ценность брендов, профессиональную дистрибуцию и business-platform подход.',
+    },
+    products: {
+      eyebrow: 'Product Categories',
+      title: 'Премиальные категории ухода за волосами для международных каналов',
+      description: 'Шампуни, средства ухода, стайлинг и hair devices — масштабируемый портфель для beauty-рынков.',
+    },
+    rd: {
+      eyebrow: 'R&D · Patents · Certifications',
+      title: 'Разработка продуктов с документацией и дисциплиной качества',
+      description: 'Мы систематизируем истории ингредиентов, патентные и сертификационные материалы, product files и экспортные документы.',
+    },
+    global: {
+      eyebrow: 'Global Business',
+      title: 'Многоязычная B2B-структура для разных рынков',
+      description: 'Английская версия является главным международным входом. Русская, корейская и вьетнамская версии могут размещаться на корейском хостинге, а китайская подготовлена для отдельного размещения в Китае.',
+    },
+    oem: {
+      eyebrow: 'OEM · ODM · OBM Partnership',
+      title: 'Гибкое сотрудничество: от подбора продукта до создания бренда',
+      description: 'Мы поддерживаем импортеров, дистрибьюторов, retail-сети, salon-каналы и private label партнеров через понятный B2B-процесс.',
+    },
+    contact: {
+      eyebrow: 'Contact',
+      title: 'Обсудите дистрибуцию или OEM/ODM/OBM-проект',
+      description: 'Сообщите целевую страну, канал, категорию продукта, объем, сроки и требования к документам — мы подготовим релевантные материалы.',
+    },
+  },
+  brands: [
+    { name: 'CELLREBORN', category: 'Premium Hair & Scalp Care', description: 'Премиальный косметический бренд ухода за волосами с фокусом на состояние кожи головы и ухоженный вид волос.', keywords: ['Линия для снижения проявлений выпадения', 'Формулы с природным вдохновением', 'Профессиональный hair care'] },
+    { name: 'Hairbest', category: 'Professional Hair Commerce', description: 'Профессионально подобранный канал hair-продуктов для salon-ориентированных клиентов и B2B-байеров.', keywords: ['Salon care', 'Дистрибуция hair-продуктов', 'Профессиональный канал'] },
+    { name: 'BeautyLabs', category: 'Beauty Business Platform', description: 'Beauty-платформа для развития брендов, продаж и B2B-проектов.', keywords: ['Управление брендом', 'Онлайн-продажи', 'B2B-сотрудничество'] },
+  ],
+  productCategories: [
+    { kicker: 'Scalp Care', title: 'Уход за состоянием кожи головы', description: 'Шампуни и средства ухода для ощущения свежести и комфортной ежедневной hair care рутины.' },
+    { kicker: 'Hair Care', title: 'Поддержание ухоженного вида волос', description: 'Тритменты и маски для мягкости, блеска, объема и ухода за визуально поврежденными волосами.' },
+    { kicker: 'Styling', title: 'Стайлинг и hair devices', description: 'Стайлинговые продукты и устройства для ежедневного ухода и профессиональных salon-задач.' },
+  ],
+  rdItems: [
+    { kicker: 'Ingredient Story', title: 'Истории ингредиентов с природным вдохновением', description: 'Мы формируем понятные ingredient narratives и сенсорные истории продукта для оценки байерами.' },
+    { kicker: 'Compliance', title: 'Коммуникация в рамках cosmetic claims', description: 'Мы избегаем медицинских обещаний и сохраняем формулировки в корректной косметической зоне.' },
+    { kicker: 'Documents', title: 'Патенты, сертификаты и экспортные файлы', description: 'Готовим product profiles, информацию по ингредиентам, сертификаты и экспортные документы для проверки.' },
+  ],
+  globalMarkets: ['Korea', 'China', 'Southeast Asia', 'Russia/CIS', 'Middle East', 'Global Online'],
+  partnershipSteps: [
+    { kicker: '01', title: 'Консультация по рынку и каналу', description: 'Анализируем рынок, канал, ценовое позиционирование и требования к документам.' },
+    { kicker: '02', title: 'Предложение продукта и бренда', description: 'Рекомендуем поставку бренда, OEM/ODM-разработку или OBM-модель под ваш бизнес.' },
+    { kicker: '03', title: 'Образцы и документы', description: 'Предоставляем образцы и информационный пакет для внутренней оценки партнера.' },
+    { kicker: '04', title: 'Контракт и запуск', description: 'Сопровождаем заказ, производство, упаковку, логистику и локальные маркетинговые материалы.' },
+  ],
+};
