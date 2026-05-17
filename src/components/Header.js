@@ -1,3 +1,13 @@
+const SITE_BASE_PATH = '/YJBN';
+
+function resolveSitePath(href) {
+  if (!href.startsWith('/')) {
+    return href;
+  }
+
+  return `${SITE_BASE_PATH}${href}`;
+}
+
 export function renderHeader({ navigation, company, languages, locale }) {
   return `
     <header class="site-header" aria-label="Primary navigation">
@@ -14,7 +24,7 @@ export function renderHeader({ navigation, company, languages, locale }) {
       <nav class="language-note" aria-label="Language navigation">
         ${languages
           .map(
-            (item) => `<a class="${item.locale === locale ? 'is-active' : ''}" href="${item.href}" hreflang="${item.locale}">${item.label}</a>`,
+            (item) => `<a class="${item.locale === locale ? 'is-active' : ''}" href="${resolveSitePath(item.href)}" hreflang="${item.locale}">${item.label}</a>`,
           )
           .join('')}
       </nav>

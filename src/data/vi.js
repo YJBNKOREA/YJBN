@@ -3,10 +3,10 @@ export const vi = {
   company: {
     shortName: 'YJBN',
     legalName: 'YJBN Co., Ltd.',
-    tagline: 'Global K-Beauty Partner',
-    footerTitle: 'Năng lực K-Beauty Hàn Quốc cho tăng trưởng B2B toàn cầu.',
+    tagline: 'Global Cosmetic Partner',
+    footerTitle: 'Năng lực cosmetic Hàn Quốc cho tăng trưởng B2B toàn cầu.',
     footerDescription:
-      'YJBN kết nối chiến lược thương hiệu, phát triển sản phẩm, hồ sơ R&D và kinh nghiệm phân phối quốc tế để xây dựng quan hệ hợp tác beauty lâu dài.',
+      'YJBN kết nối skincare, hair care, body care, hồ sơ R&D và kinh nghiệm phân phối quốc tế để xây dựng quan hệ hợp tác cosmetic lâu dài.',
   },
   navigation: [
     { label: 'Về YJBN', href: '#about' },
@@ -33,6 +33,12 @@ export const vi = {
     phone: 'Điện thoại',
     explore: 'Điều hướng',
     copyright: 'All rights reserved.',
+    heroVisualAlt: 'Hình ảnh cosmetic cao cấp của YJBN và CELLREBORN',
+    companyVisualAlt: 'Hình ảnh công ty và R&D của YJBN',
+    companyVisualCaption: 'Hoạch định cosmetic Hàn Quốc và R&D coordination',
+    textureVisualAlt: 'Hình ảnh texture và sản phẩm cosmetic',
+    textureVisualCaption: 'Texture skincare, hair care và body care',
+    globalVisualAlt: 'Hình ảnh phân phối B2B K-Beauty toàn cầu',
   },
   form: {
     aria: 'Biểu mẫu liên hệ B2B',
@@ -59,68 +65,68 @@ export const vi = {
     phoneHref: '+82310000000',
   },
   stats: [
-    { value: 'K-Beauty', label: 'Kinh nghiệm Hàn Quốc về chăm sóc tóc và da đầu' },
+    { value: 'K-Beauty', label: 'Chuyên môn skincare, hair care và body care' },
     { value: 'B2B', label: 'Đối tác nhập khẩu, phân phối và bán lẻ' },
     { value: 'OEM/ODM/OBM', label: 'Từ ý tưởng sản phẩm đến triển khai thương hiệu' },
   ],
   sections: {
     hero: {
       eyebrow: 'YJBN Co., Ltd. Official Website',
-      title: 'Doanh nghiệp K-Beauty Hàn Quốc dành cho đối tác hair care toàn cầu',
+      title: 'Công ty cosmetic Hàn Quốc\ncho đối tác beauty toàn cầu',
       description:
-        'YJBN phát triển các thương hiệu CELLREBORN, Hairbest và BeautyLabs, cung cấp danh mục mỹ phẩm chăm sóc tóc và da đầu cho buyer quốc tế, nhà phân phối và đối tác OEM/ODM/OBM.',
+        'YJBN phát triển danh mục mỹ phẩm cao cấp trong skincare, hair care và body care.\nThông qua CELLREBORN, Hairbest và BeautyLabs, chúng tôi hỗ trợ buyer, nhà phân phối và đối tác OEM/ODM/OBM bằng năng lực product planning từ Hàn Quốc.',
     },
     about: {
       eyebrow: 'About YJBN',
-      title: 'Tư duy phát triển sản phẩm theo thương hiệu, dựa trên uy tín K-Beauty Hàn Quốc',
+      title: 'Hoạch định cosmetic theo thương hiệu\ndựa trên uy tín K-Beauty Hàn Quốc',
       description:
         'YJBN kết hợp phát triển sản phẩm, vận hành thương hiệu, chiến lược kênh bán và truyền thông xuất khẩu để tạo ra mô hình beauty business thực tế.',
       points: [
-        'Chúng tôi sử dụng ngôn ngữ phù hợp với tiêu chuẩn truyền thông mỹ phẩm, như hỗ trợ giảm biểu hiện rụng tóc, chăm sóc tình trạng da đầu và quản lý mái tóc khỏe đẹp.',
-        'Mỗi thương hiệu có vai trò rõ ràng, giúp đối tác chọn danh mục phù hợp cho retail, salon, online hoặc kênh phân phối.',
-        'Cấu trúc nội dung đã sẵn sàng cho tiếng Anh, Hàn, Trung, Nga và Việt; phần tiếng Trung được tách module để thuận tiện triển khai hosting tại Trung Quốc trong tương lai.',
+        'Chúng tôi xây dựng câu chuyện sản phẩm cho da, tóc, da đầu và body routine, đồng thời giữ thông điệp phù hợp chuẩn truyền thông mỹ phẩm.',
+        'Mỗi thương hiệu có vai trò rõ ràng để đối tác chọn portfolio phù hợp cho retail, salon, online, phân phối hoặc private label.',
+        'Nội dung tiếng Anh, Hàn, Trung, Nga và Việt được tổ chức để từng thị trường đọc tự nhiên và hiểu nhanh về công ty.',
       ],
     },
     brands: {
       eyebrow: 'Brand Portfolio',
-      title: 'Hệ sinh thái thương hiệu YJBN cho tăng trưởng B2B',
-      description: 'YJBN kết hợp giá trị thương hiệu với năng lực phân phối chuyên nghiệp và nền tảng business cho ngành beauty.',
+      title: 'Hệ sinh thái thương hiệu cao cấp\ncho tăng trưởng B2B cosmetic',
+      description: 'YJBN kết hợp giá trị thương hiệu với năng lực phân phối chuyên nghiệp và nền tảng business linh hoạt cho đối tác cosmetic toàn cầu.',
     },
     products: {
       eyebrow: 'Product Categories',
-      title: 'Danh mục hair care cao cấp cho kênh phân phối quốc tế',
-      description: 'Từ dầu gội, treatment đến styling và thiết bị tóc, YJBN đề xuất các dòng sản phẩm dễ mở rộng tại thị trường beauty toàn cầu.',
+      title: 'Skincare, hair care và body care\ncho kênh phân phối toàn cầu',
+      description: 'Từ facial routine, scalp care đến body product, YJBN đề xuất các dòng mỹ phẩm có concept rõ, texture tinh tế và hồ sơ sẵn sàng xuất khẩu.',
     },
     rd: {
       eyebrow: 'R&D · Patents · Certifications',
-      title: 'Phát triển sản phẩm đi cùng hồ sơ và tiêu chuẩn chất lượng',
+      title: 'Phát triển sản phẩm đi cùng\nhồ sơ và tiêu chuẩn chất lượng',
       description: 'Chúng tôi hệ thống hóa câu chuyện thành phần, tài liệu patent/certification, hồ sơ sản phẩm và chứng từ xuất khẩu để hỗ trợ đối tác đánh giá.',
     },
     global: {
       eyebrow: 'Global Business',
-      title: 'Cấu trúc website đa ngôn ngữ cho từng chiến lược thị trường',
-      description: 'Tiếng Anh là cổng thông tin toàn cầu chính. Tiếng Hàn, Nga và Việt có thể vận hành trên hosting Hàn Quốc; tiếng Trung được chuẩn bị để tách sang Alibaba Cloud hoặc hosting nội địa Trung Quốc.',
+      title: 'Cấu trúc B2B đa ngôn ngữ\ncho mở rộng theo từng thị trường',
+      description: 'Tiếng Anh là cổng thông tin toàn cầu; tiếng Hàn, Trung, Nga và Việt giúp từng thị trường hiểu tự nhiên về công ty, thương hiệu và nhóm sản phẩm.',
     },
     oem: {
       eyebrow: 'OEM · ODM · OBM Partnership',
-      title: 'Hợp tác linh hoạt từ chọn sản phẩm đến xây dựng thương hiệu',
+      title: 'Hợp tác linh hoạt\ntừ chọn sản phẩm đến xây dựng thương hiệu',
       description: 'Chúng tôi hỗ trợ nhà nhập khẩu, nhà phân phối, retailer, kênh salon và đối tác private label bằng quy trình B2B rõ ràng.',
     },
     contact: {
       eyebrow: 'Contact',
-      title: 'Bắt đầu trao đổi về phân phối toàn cầu hoặc OEM/ODM/OBM',
+      title: 'Bắt đầu trao đổi\nvề phân phối cosmetic toàn cầu',
       description: 'Hãy chia sẻ quốc gia mục tiêu, kênh bán, nhóm sản phẩm, số lượng dự kiến, timeline và yêu cầu hồ sơ để chúng tôi chuẩn bị tài liệu phù hợp.',
     },
   },
   brands: [
-    { name: 'CELLREBORN', category: 'Premium Hair & Scalp Care', description: 'Thương hiệu mỹ phẩm hair care cao cấp tập trung vào chăm sóc tình trạng da đầu và mái tóc khỏe đẹp.', keywords: ['Dòng hỗ trợ giảm biểu hiện rụng tóc', 'Công thức lấy cảm hứng từ thiên nhiên', 'Hair care chuyên nghiệp'] },
-    { name: 'Hairbest', category: 'Professional Hair Commerce', description: 'Kênh tuyển chọn sản phẩm tóc chuyên nghiệp cho khách hàng định hướng salon và buyer B2B.', keywords: ['Salon care', 'Phân phối sản phẩm tóc', 'Kênh chuyên nghiệp'] },
-    { name: 'BeautyLabs', category: 'Beauty Business Platform', description: 'Nền tảng beauty business hỗ trợ mở rộng thương hiệu, vận hành bán hàng và dự án B2B.', keywords: ['Vận hành thương hiệu', 'Bán hàng online', 'Hợp tác B2B'] },
+    { name: 'CELLREBORN', category: 'Premium Cosmetic Care', description: 'Thương hiệu cosmetic cao cấp mở rộng từ scalp & hair routine sang skincare và body care concept.', keywords: ['Skin · hair · body routines', 'Công thức lấy cảm hứng từ thiên nhiên', 'Premium cosmetic care'] },
+    { name: 'Hairbest', category: 'Professional Beauty Commerce', description: 'Kênh beauty chuyên nghiệp cho khách hàng định hướng salon, cosmetic buyer và đối tác phân phối B2B.', keywords: ['Professional care', 'Phân phối beauty', 'Salon & retail channel'] },
+    { name: 'BeautyLabs', category: 'Beauty Business Platform', description: 'Nền tảng beauty business hỗ trợ mở rộng thương hiệu, sourcing sản phẩm, vận hành bán hàng và dự án B2B.', keywords: ['Vận hành thương hiệu', 'Bán hàng online', 'Hợp tác B2B'] },
   ],
   productCategories: [
-    { kicker: 'Scalp Care', title: 'Chăm sóc tình trạng da đầu', description: 'Dầu gội và sản phẩm chăm sóc giúp da đầu có cảm giác sạch thoáng, phù hợp routine hair care hằng ngày.' },
-    { kicker: 'Hair Care', title: 'Quản lý mái tóc khỏe đẹp', description: 'Treatment và hair mask hướng đến độ mềm mượt, bóng khỏe, độ phồng và chăm sóc tóc có dấu hiệu hư tổn.' },
-    { kicker: 'Styling', title: 'Styling & thiết bị tóc', description: 'Sản phẩm tạo kiểu và thiết bị tóc cho nhu cầu làm đẹp hằng ngày cũng như kênh salon chuyên nghiệp.' },
+    { kicker: 'Skincare', title: 'Daily skincare routines', description: 'Cleanser, serum, cream và mask concept tập trung vào texture tinh tế, cảm giác thoải mái và routine hằng ngày.' },
+    { kicker: 'Hair Care', title: 'Scalp and hair care', description: 'Dầu gội, treatment và scalp care giúp da đầu có cảm giác sạch thoáng, tóc mềm mượt, bóng khỏe và khỏe đẹp hơn.' },
+    { kicker: 'Body Care', title: 'Body wash and body care', description: 'Body cleanser, lotion và sản phẩm chăm sóc giàu trải nghiệm giúp đối tác xây dựng portfolio cosmetic hoàn chỉnh.' },
   ],
   rdItems: [
     { kicker: 'Ingredient Story', title: 'Câu chuyện thành phần từ cảm hứng thiên nhiên', description: 'Chúng tôi xây dựng câu chuyện thành phần và trải nghiệm sử dụng rõ ràng để buyer hiểu giá trị thương hiệu.' },

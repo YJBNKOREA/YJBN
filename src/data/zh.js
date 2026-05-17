@@ -3,10 +3,10 @@ export const zh = {
   company: {
     shortName: 'YJBN',
     legalName: 'YJBN有限公司',
-    tagline: '全球K-Beauty合作伙伴',
+    tagline: '全球化妆品合作伙伴',
     footerTitle: '以韩国美妆专业力，连接全球B2B增长机会。',
     footerDescription:
-      'YJBN整合品牌策略、产品开发、研发资料管理与跨境渠道经验，为美妆合作伙伴提供长期、稳定的业务支持。',
+      'YJBN整合护肤、护发、身体护理产品企划、研发资料管理与跨境渠道经验，为全球化妆品合作伙伴提供长期支持。',
   },
   navigation: [
     { label: '公司介绍', href: '#about' },
@@ -33,6 +33,12 @@ export const zh = {
     phone: '电话',
     explore: '快速导航',
     copyright: 'All rights reserved.',
+    heroVisualAlt: 'YJBN与CELLREBORN高端化妆品视觉',
+    companyVisualAlt: 'YJBN化妆品研发与公司视觉',
+    companyVisualCaption: '韩国化妆品企划与R&D协作',
+    textureVisualAlt: '化妆品质地与产品视觉',
+    textureVisualCaption: '护肤、护发与身体护理质地',
+    globalVisualAlt: '全球B2B K-Beauty渠道视觉',
   },
   form: {
     aria: 'B2B商务咨询表单',
@@ -59,68 +65,68 @@ export const zh = {
     phoneHref: '+82310000000',
   },
   stats: [
-    { value: 'K-Beauty', label: '韩国头发与头皮护理专业经验' },
+    { value: 'K-Beauty', label: '护肤、护发与身体护理专业经验' },
     { value: 'B2B', label: '面向进口商、渠道商与零售伙伴' },
     { value: 'OEM/ODM/OBM', label: '从产品企划到品牌落地' },
   ],
   sections: {
     hero: {
       eyebrow: 'YJBN有限公司 官方网站',
-      title: '面向全球美妆渠道的韩国K-Beauty头发护理合作伙伴',
+      title: '面向全球美妆渠道的\n韩国化妆品公司',
       description:
-        'YJBN运营CELLREBORN(世利本)、Hairbest、BeautyLabs等品牌，为海外买家、代理商及OEM/ODM/OBM合作伙伴提供符合化妆品定位的头发与头皮护理产品组合。',
+        'YJBN以CELLREBORN、Hairbest、BeautyLabs为核心，打造覆盖护肤、护发与身体护理的高端化妆品组合。\n我们为海外买家、代理商及OEM/ODM/OBM合作伙伴提供韩国式产品企划与品牌运营支持。',
     },
     about: {
       eyebrow: 'About YJBN',
-      title: '以韩国美妆信赖感为基础的品牌型产品企划',
+      title: '以韩国美妆信赖感为基础的\n品牌型化妆品企划',
       description:
         'YJBN将产品企划、品牌运营、渠道策略与出口沟通整合在一起，帮助合作伙伴更高效地进入目标市场。',
       points: [
-        '我们遵循化妆品宣传边界，使用“缓解脱发症状”“头皮状态护理”“发丝健康管理”等更适合美妆渠道的表达。',
-        '根据零售、沙龙、电商、代理渠道的不同需求，提供定位清晰的品牌和产品组合。',
-        '中文内容已单独模块化，便于未来迁移至阿里云或中国境内服务器独立部署。',
+        '我们围绕肌肤、发丝、头皮与身体护理场景设计产品故事，并保持符合化妆品宣传规范的表达。',
+        '根据零售、沙龙、电商、代理和自有品牌渠道需求，提供定位清晰的品牌及产品组合。',
+        '英文、韩文、中文、俄文、越南文内容均整理为更自然的阅读节奏，方便各市场合作伙伴理解。',
       ],
     },
     brands: {
       eyebrow: 'Brand Portfolio',
-      title: '适合B2B拓展的YJBN品牌矩阵',
-      description: '将消费者品牌价值、专业渠道能力与美妆业务平台功能整合为可拓展的合作体系。',
+      title: '适合B2B化妆品增长的\n高端品牌生态',
+      description: '将消费者品牌价值、专业渠道能力与美妆业务平台功能整合为可拓展的全球合作体系。',
     },
     products: {
       eyebrow: 'Product Categories',
-      title: '适配全球渠道的高端头发护理品类',
-      description: '覆盖洗发、护发、造型及美发工具等品类，满足海外美妆市场的多样化上架需求。',
+      title: '覆盖护肤、护发与身体护理的\n全球化妆品品类',
+      description: '从面部护理到头皮与发丝护理、身体产品，YJBN提供概念清晰、资料完善的产品组合。',
     },
     rd: {
       eyebrow: 'R&D · Patents · Certifications',
-      title: '以资料体系和品质标准支撑产品开发',
+      title: '以资料体系和品质标准\n支撑产品开发',
       description: '我们整理原料故事、专利/认证参考、产品资料及出口文件，帮助合作伙伴完成市场评估与上架准备。',
     },
     global: {
       eyebrow: 'Global Business',
-      title: '为不同市场部署而设计的多语言B2B架构',
-      description: '英文站作为全球入口；中文内容采用独立模块，便于未来迁移至阿里云或中国境内托管环境。',
+      title: '为市场扩张设计的\n多语言B2B架构',
+      description: '英文站作为全球入口；中文、韩文、俄文和越南文页面帮助不同地区伙伴自然了解公司、品牌和产品品类。',
     },
     oem: {
       eyebrow: 'OEM · ODM · OBM Partnership',
-      title: '从产品选品到品牌共建的灵活合作模式',
+      title: '从产品选品到品牌共建的\n灵活合作模式',
       description: '为进口商、代理商、零售商、沙龙渠道及自有品牌客户提供清晰的B2B合作流程。',
     },
     contact: {
       eyebrow: 'Contact',
-      title: '欢迎洽谈全球代理、分销及OEM/ODM/OBM合作',
+      title: '欢迎洽谈全球化妆品分销及\nOEM/ODM/OBM合作',
       description: '请告知目标国家、渠道类型、产品品类、预计数量、时间计划和资质需求，我们将准备相应资料。',
     },
   },
   brands: [
-    { name: 'CELLREBORN(世利本)', category: 'Premium Hair & Scalp Care', description: '专注头皮状态护理与发丝健康管理的高端化妆品头发护理品牌。', keywords: ['缓解脱发症状系列', '自然灵感配方', '专业头发护理'] },
-    { name: 'Hairbest', category: 'Professional Hair Commerce', description: '面向沙龙及专业买家的头发护理产品精选与渠道品牌。', keywords: ['沙龙护理', '美发产品流通', '专业渠道'] },
-    { name: 'BeautyLabs', category: 'Beauty Business Platform', description: '支持品牌拓展、销售运营与B2B项目合作的美妆业务平台。', keywords: ['品牌运营', '线上销售', 'B2B合作'] },
+    { name: 'CELLREBORN(世利本)', category: 'Premium Cosmetic Care', description: '从头皮与发丝护理扩展至护肤和身体护理概念的高端化妆品品牌。', keywords: ['肌肤·头发·身体护理', '自然灵感配方', '高端化妆品护理'] },
+    { name: 'Hairbest', category: 'Professional Beauty Commerce', description: '面向沙龙感客户、化妆品买家和B2B渠道伙伴的专业美妆精选渠道。', keywords: ['专业护理', '美妆产品流通', '沙龙与零售渠道'] },
+    { name: 'BeautyLabs', category: 'Beauty Business Platform', description: '支持品牌拓展、产品选品、销售运营与B2B项目合作的美妆业务平台。', keywords: ['品牌运营', '线上销售', 'B2B合作'] },
   ],
   productCategories: [
-    { kicker: 'Scalp Care', title: '头皮状态护理', description: '帮助头皮保持清爽舒适的洗发与护理产品，适合日常头发护理流程。' },
-    { kicker: 'Hair Care', title: '发丝健康管理', description: '围绕柔顺、光泽、蓬松和受损发质日常护理开发的护发素、发膜等产品。' },
-    { kicker: 'Styling', title: '造型与美发工具', description: '满足日常造型和专业沙龙需求的造型产品及美发工具。' },
+    { kicker: 'Skincare', title: '日常护肤护理', description: '洁面、精华、面霜、面膜等概念，注重细腻质地、舒适肤感与日常使用体验。' },
+    { kicker: 'Hair Care', title: '头皮与发丝护理', description: '洗发、护发和头皮护理产品，帮助呈现清爽头皮感、柔顺光泽与健康发丝状态。' },
+    { kicker: 'Body Care', title: '身体清洁与护理', description: '身体清洁、润肤和感官型护理产品，帮助合作伙伴打造完整化妆品组合。' },
   ],
   rdItems: [
     { kicker: 'Ingredient Story', title: '自然灵感原料故事', description: '以清晰的原料概念和使用体验，帮助买家理解品牌价值。' },

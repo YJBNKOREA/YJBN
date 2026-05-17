@@ -3,10 +3,10 @@ export const ko = {
   company: {
     shortName: 'YJBN',
     legalName: '와이제이비앤 주식회사',
-    tagline: 'Global K-Beauty Partner',
+    tagline: 'Global Cosmetic Partner',
     footerTitle: '한국의 뷰티 전문성을 글로벌 B2B 성장으로 연결합니다.',
     footerDescription:
-      'YJBN은 브랜드 전략, 제품 개발, R&D 문서화, 해외 유통 경험을 바탕으로 장기적인 뷰티 파트너십을 설계합니다.',
+      'YJBN은 스킨케어, 헤어케어, 바디케어 제품 기획과 R&D 문서화, 해외 유통 경험을 연결해 장기적인 코스메틱 파트너십을 설계합니다.',
   },
   navigation: [
     { label: '회사소개', href: '#about' },
@@ -33,6 +33,12 @@ export const ko = {
     phone: '대표 전화',
     explore: '바로가기',
     copyright: 'All rights reserved.',
+    heroVisualAlt: 'YJBN과 CELLREBORN의 프리미엄 코스메틱 비주얼',
+    companyVisualAlt: 'YJBN 코스메틱 연구 및 회사 비주얼',
+    companyVisualCaption: '한국형 코스메틱 기획과 R&D 코디네이션',
+    textureVisualAlt: '코스메틱 제형과 제품 비주얼',
+    textureVisualCaption: '스킨케어·헤어케어·바디케어 제형 이미지',
+    globalVisualAlt: '글로벌 B2B K-Beauty 유통 비주얼',
   },
   form: {
     aria: 'B2B 문의 양식',
@@ -59,68 +65,68 @@ export const ko = {
     phoneHref: '+82310000000',
   },
   stats: [
-    { value: 'K-Beauty', label: '한국형 헤어·두피 케어 전문성' },
+    { value: 'K-Beauty', label: '스킨케어·헤어케어·바디케어 전문성' },
     { value: 'B2B', label: '해외 바이어·총판·리테일 파트너십' },
     { value: 'OEM/ODM/OBM', label: '제품 기획부터 브랜드 운영까지' },
   ],
   sections: {
     hero: {
       eyebrow: 'YJBN Co., Ltd. Official Website',
-      title: '글로벌 헤어케어 파트너를 위한 한국 K-Beauty 기업',
+      title: '글로벌 뷰티 파트너를 위한\n한국 코스메틱 컴퍼니',
       description:
-        'YJBN은 CELLREBORN, Hairbest, BeautyLabs를 중심으로 헤어·두피 컨디션 케어 제품과 B2B 브랜드 비즈니스를 전개하는 한국 뷰티 전문 기업입니다.',
+        'YJBN은 CELLREBORN, Hairbest, BeautyLabs를 중심으로 스킨케어, 헤어케어, 바디케어를 아우르는 프리미엄 코스메틱 포트폴리오를 전개합니다.\n해외 바이어, 총판, OEM/ODM/OBM 파트너를 위해 한국형 제품 기획과 브랜드 운영 역량을 연결합니다.',
     },
     about: {
       eyebrow: 'About YJBN',
-      title: '한국 뷰티 신뢰도를 기반으로 한 브랜드 중심 제품 기획',
+      title: '한국 뷰티 신뢰도를 기반으로 한\n브랜드 중심 코스메틱 기획',
       description:
         'YJBN은 제품 기획, 브랜드 운영, 채널 전략, 수출 커뮤니케이션을 연결해 실질적인 글로벌 뷰티 비즈니스를 만들어갑니다.',
       points: [
-        '화장품 표시·광고 기준을 준수하며 탈모증상완화, 두피 컨디션 케어, 모발 건강 관리 등 안전한 표현을 사용합니다.',
-        '브랜드별 역할을 명확히 구분해 리테일, 살롱, 온라인, 총판 채널에 적합한 포트폴리오를 제안합니다.',
-        '영어, 한국어, 중국어, 러시아어, 베트남어 확장을 고려했으며 중국어 콘텐츠는 중국 내 호스팅으로 분리하기 쉽게 구성했습니다.',
+        '피부, 모발, 두피, 바디 루틴을 위한 코스메틱 스토리를 설계하고 화장품 표시·광고 기준에 맞는 표현을 사용합니다.',
+        '브랜드별 역할을 명확히 구분해 리테일, 살롱, 온라인, 총판, PB 채널에 적합한 포트폴리오를 제안합니다.',
+        '영어, 한국어, 중국어, 러시아어, 베트남어 페이지에서 각 시장이 자연스럽게 이해할 수 있도록 문장 흐름을 정리했습니다.',
       ],
     },
     brands: {
       eyebrow: 'Brand Portfolio',
-      title: 'B2B 성장을 위한 YJBN 브랜드 생태계',
-      description: '소비자 브랜드 가치, 전문 유통 역량, 비즈니스 플랫폼 기능을 하나의 포트폴리오로 연결합니다.',
+      title: 'B2B 코스메틱 성장을 위한\n프리미엄 브랜드 생태계',
+      description: '소비자 브랜드 가치, 전문 유통 역량, 비즈니스 플랫폼 기능을 글로벌 코스메틱 파트너십으로 연결합니다.',
     },
     products: {
       eyebrow: 'Product Categories',
-      title: '글로벌 채널에 적합한 프리미엄 헤어케어 카테고리',
-      description: '샴푸, 트리트먼트, 스타일링, 헤어 디바이스까지 해외 시장 확장성이 높은 제품군을 제안합니다.',
+      title: '스킨케어, 헤어케어, 바디케어를 아우르는\n글로벌 코스메틱 카테고리',
+      description: '페이셜 루틴부터 두피·모발 케어, 바디 제품까지 선명한 콘셉트와 수출 문서화를 갖춘 제품군을 제안합니다.',
     },
     rd: {
       eyebrow: 'R&D · Patents · Certifications',
-      title: '문서화와 품질 기준을 갖춘 제품 개발',
+      title: '문서화와 품질 기준을 갖춘\n코스메틱 제품 개발',
       description: '원료 스토리, 특허·인증 자료, 제품 소개서, 수출 문서를 체계화해 파트너의 검토와 시장 진입을 지원합니다.',
     },
     global: {
       eyebrow: 'Global Business',
-      title: '시장별 운영 전략을 고려한 다국어 B2B 구조',
-      description: '영어를 글로벌 기본 관문으로 운영하고, 한국어·러시아어·베트남어는 국내 호스팅, 중국어는 향후 알리바바 클라우드 또는 중국 내 호스팅 분리를 고려합니다.',
+      title: '시장별 확장을 고려한\n다국어 B2B 구조',
+      description: '영어를 글로벌 관문으로 두고 한국어, 중국어, 러시아어, 베트남어 페이지에서 회사, 브랜드, 제품군을 자연스럽게 이해할 수 있도록 구성했습니다.',
     },
     oem: {
       eyebrow: 'OEM · ODM · OBM Partnership',
-      title: '제품 소싱부터 브랜드 구축까지 유연한 협업',
+      title: '제품 소싱부터 브랜드 구축까지\n유연한 협업',
       description: '수입사, 총판, 리테일러, 살롱 유통사, PB 파트너를 위한 명확한 B2B 협업 프로세스를 제공합니다.',
     },
     contact: {
       eyebrow: 'Contact',
-      title: '글로벌 유통 및 OEM/ODM/OBM 상담을 시작하세요',
+      title: '글로벌 코스메틱 유통 및\nOEM/ODM/OBM 상담을 시작하세요',
       description: '희망 국가, 채널, 제품군, 예상 수량, 일정, 인증 요구사항을 알려주시면 적합한 자료를 준비하겠습니다.',
     },
   },
   brands: [
-    { name: 'CELLREBORN', category: 'Premium Hair & Scalp Care', description: '두피 컨디션 케어와 모발 건강 관리를 중심으로 한 프리미엄 헤어케어 브랜드입니다.', keywords: ['탈모증상완화 기능성 라인', '자연 기반 포뮬러', '전문 헤어케어'] },
-    { name: 'Hairbest', category: 'Professional Hair Commerce', description: '살롱과 전문 고객을 위한 헤어 제품 큐레이션 및 유통 채널 브랜드입니다.', keywords: ['살롱케어', '헤어 제품 유통', '프로페셔널 채널'] },
-    { name: 'BeautyLabs', category: 'Beauty Business Platform', description: '브랜드 확장, 판매 운영, B2B 프로젝트를 지원하는 뷰티 비즈니스 플랫폼입니다.', keywords: ['브랜드 운영', '온라인 판매', 'B2B 협업'] },
+    { name: 'CELLREBORN', category: 'Premium Cosmetic Care', description: '두피·모발 루틴에서 스킨케어와 바디케어 콘셉트까지 확장하는 프리미엄 코스메틱 브랜드입니다.', keywords: ['스킨·헤어·바디 루틴', '자연 기반 포뮬러', '프리미엄 코스메틱 케어'] },
+    { name: 'Hairbest', category: 'Professional Beauty Commerce', description: '살롱 감도의 고객과 코스메틱 바이어를 위한 전문 뷰티 제품 큐레이션 및 유통 채널입니다.', keywords: ['프로페셔널 케어', '뷰티 제품 유통', '살롱·리테일 채널'] },
+    { name: 'BeautyLabs', category: 'Beauty Business Platform', description: '브랜드 확장, 제품 소싱, 판매 운영, B2B 프로젝트를 지원하는 뷰티 비즈니스 플랫폼입니다.', keywords: ['브랜드 운영', '온라인 판매', 'B2B 협업'] },
   ],
   productCategories: [
-    { kicker: 'Scalp Care', title: '두피 컨디션 케어', description: '두피를 산뜻하게 관리하고 편안한 헤어케어 루틴을 돕는 샴푸와 케어 제품군입니다.' },
-    { kicker: 'Hair Care', title: '모발 건강 관리', description: '손상 모발, 윤기, 볼륨, 부드러운 사용감을 고려한 트리트먼트와 헤어팩 라인입니다.' },
-    { kicker: 'Styling', title: '스타일링 & 디바이스', description: '일상 스타일링과 전문 살롱 니즈를 고려한 스타일링 제품 및 헤어 디바이스입니다.' },
+    { kicker: 'Skincare', title: '데일리 스킨케어 루틴', description: '클렌저, 세럼, 크림, 마스크 등 섬세한 제형감과 편안한 사용감을 중심으로 한 스킨케어 콘셉트입니다.' },
+    { kicker: 'Hair Care', title: '두피·모발 케어', description: '두피를 산뜻하게 관리하고 윤기, 부드러움, 건강해 보이는 모발 루틴을 돕는 샴푸와 트리트먼트 라인입니다.' },
+    { kicker: 'Body Care', title: '바디 워시와 바디 케어', description: '바디 클렌저, 로션, 감각적인 케어 제품으로 완성도 높은 코스메틱 포트폴리오를 구성합니다.' },
   ],
   rdItems: [
     { kicker: 'Ingredient Story', title: '자연 기반 원료 스토리', description: '바이어가 브랜드 가치를 이해할 수 있도록 원료 콘셉트와 사용감 중심의 제품 스토리를 개발합니다.' },

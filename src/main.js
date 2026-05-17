@@ -1,4 +1,3 @@
-import './styles/global.css';
 import { renderHeader } from './components/Header.js';
 import { renderFooter } from './components/Footer.js';
 import { renderHomePage } from './components/HomePage.js';
@@ -30,3 +29,23 @@ ${labels.message}:
 ${formData.get('message') || ''}`);
   window.location.href = `mailto:${content.contact.email}?subject=${subject}&body=${body}`;
 });
+
+const revealElements = document.querySelectorAll('.reveal');
+
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.16, rootMargin: '0px 0px -48px' },
+  );
+
+  revealElements.forEach((element) => revealObserver.observe(element));
+} else {
+  revealElements.forEach((element) => element.classList.add('is-visible'));
+}

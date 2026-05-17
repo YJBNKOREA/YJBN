@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">HAIRBEST visual</title>
+  <desc id="desc">Premium abstract cosmetic photography placeholder for HAIRBEST.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dfe9df"/>
+      <stop offset="0.52" stop-color="#fffdf8"/>
+      <stop offset="1" stop-color="#3a5b51"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="28%" cy="18%" r="70%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="0.48" stop-color="#d7c08a" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#3a5b51" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="28" stdDeviation="32" flood-color="#071f1a" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect width="1200" height="900" fill="url(#glow)"/>
+  <g opacity="0.26" stroke="#3a5b51" stroke-width="1">
+    <path d="M80 160 C260 86 420 126 580 88 S880 98 1110 40" fill="none"/>
+    <path d="M40 760 C280 640 436 728 640 622 S906 514 1160 588" fill="none"/>
+    <path d="M180 70 V830 M360 70 V830 M540 70 V830 M720 70 V830 M900 70 V830 M1080 70 V830" opacity="0.22"/>
+  </g>
+  <g filter="url(#shadow)">
+    <ellipse cx="770" cy="500" rx="240" ry="290" fill="#ffffff" opacity="0.82"/>
+    <rect x="636" y="246" width="270" height="420" rx="90" fill="#3a5b51" opacity="0.92"/>
+    <rect x="700" y="188" width="142" height="92" rx="34" fill="#f6efe5"/>
+    <rect x="666" y="340" width="210" height="210" rx="34" fill="#fffaf2" opacity="0.92"/>
+    <circle cx="420" cy="560" r="146" fill="#fffaf2" opacity="0.88"/>
+    <circle cx="420" cy="560" r="96" fill="#3a5b51" opacity="0.85"/>
+    <ellipse cx="342" cy="344" rx="112" ry="154" fill="#ffffff" opacity="0.72"/>
+    <rect x="272" y="278" width="140" height="236" rx="54" fill="#dfe9df" opacity="0.9"/>
+  </g>
+  <g transform="translate(88 92)">
+    <rect width="440" height="154" rx="34" fill="#ffffff" opacity="0.64"/>
+    <text x="34" y="70" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#3a5b51" letter-spacing="3">HAIRBEST</text>
+    <text x="34" y="112" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#7d704f" letter-spacing="4">professional channel</text>
+  </g>
+  <circle cx="1036" cy="166" r="74" fill="#b9985a" opacity="0.28"/>
+  <circle cx="100" cy="820" r="140" fill="#ffffff" opacity="0.18"/>
+</svg>
