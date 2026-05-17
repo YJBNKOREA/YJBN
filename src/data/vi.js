@@ -1,0 +1,137 @@
+export const vi = {
+  locale: 'vi',
+  company: {
+    shortName: 'YJBN',
+    legalName: 'YJBN Co., Ltd.',
+    tagline: 'Global K-Beauty Partner',
+    footerTitle: 'Năng lực K-Beauty Hàn Quốc cho tăng trưởng B2B toàn cầu.',
+    footerDescription:
+      'YJBN kết nối chiến lược thương hiệu, phát triển sản phẩm, hồ sơ R&D và kinh nghiệm phân phối quốc tế để xây dựng quan hệ hợp tác beauty lâu dài.',
+  },
+  navigation: [
+    { label: 'Về YJBN', href: '#about' },
+    { label: 'Thương hiệu', href: '#brands' },
+    { label: 'Sản phẩm', href: '#products' },
+    { label: 'R&D', href: '#rd' },
+    { label: 'Toàn cầu', href: '#global' },
+    { label: 'Liên hệ', href: '#contact' },
+  ],
+  languages: [
+    { label: 'EN', href: '/', locale: 'en' },
+    { label: 'KR', href: '/ko/', locale: 'ko' },
+    { label: '中文', href: '/zh/', locale: 'zh' },
+    { label: 'RU', href: '/ru/', locale: 'ru' },
+    { label: 'VI', href: '/vi/', locale: 'vi' },
+  ],
+  labels: {
+    primaryCta: 'Trao đổi OEM/ODM/OBM',
+    secondaryCta: 'Xem thương hiệu',
+    coreCapabilities: 'Năng lực cốt lõi của YJBN',
+    contactInfo: 'Thông tin liên hệ',
+    address: 'Địa chỉ',
+    email: 'Email kinh doanh',
+    phone: 'Điện thoại',
+    explore: 'Điều hướng',
+    copyright: 'All rights reserved.',
+  },
+  form: {
+    aria: 'Biểu mẫu liên hệ B2B',
+    company: 'Tên công ty',
+    companyPlaceholder: 'Nhập tên công ty',
+    name: 'Người phụ trách',
+    namePlaceholder: 'Nhập họ tên',
+    email: 'Email',
+    emailPlaceholder: 'name@company.com',
+    inquiryType: 'Nội dung quan tâm',
+    options: ['OEM/ODM/OBM', 'Xuất khẩu / Nhà phân phối', 'Hợp tác thương hiệu', 'Khác'],
+    message: 'Tin nhắn',
+    messagePlaceholder: 'Vui lòng chia sẻ thị trường mục tiêu, nhóm sản phẩm, số lượng dự kiến, thời gian và yêu cầu hồ sơ.',
+    submit: 'Chuẩn bị email liên hệ',
+    note: 'Biểu mẫu được thiết kế để có thể tích hợp CRM/API về sau. Hiện tại hệ thống sẽ chuẩn bị email liên hệ.',
+    subjectPrefix: '[YJBN B2B Inquiry]',
+    unnamedCompany: 'Chưa nhập tên công ty',
+    mailBodyLabels: { company: 'Tên công ty', name: 'Người phụ trách', email: 'Email', type: 'Nội dung quan tâm', message: 'Tin nhắn' },
+  },
+  contact: {
+    address: '13, Bonggol-gil 81beon-gil, Gwangju-si, Gyeonggi-do, Hàn Quốc',
+    email: 'contact@yjbn.co.kr',
+    phone: '+82-31-000-0000',
+    phoneHref: '+82310000000',
+  },
+  stats: [
+    { value: 'K-Beauty', label: 'Kinh nghiệm Hàn Quốc về chăm sóc tóc và da đầu' },
+    { value: 'B2B', label: 'Đối tác nhập khẩu, phân phối và bán lẻ' },
+    { value: 'OEM/ODM/OBM', label: 'Từ ý tưởng sản phẩm đến triển khai thương hiệu' },
+  ],
+  sections: {
+    hero: {
+      eyebrow: 'YJBN Co., Ltd. Official Website',
+      title: 'Doanh nghiệp K-Beauty Hàn Quốc dành cho đối tác hair care toàn cầu',
+      description:
+        'YJBN phát triển các thương hiệu CELLREBORN, Hairbest và BeautyLabs, cung cấp danh mục mỹ phẩm chăm sóc tóc và da đầu cho buyer quốc tế, nhà phân phối và đối tác OEM/ODM/OBM.',
+    },
+    about: {
+      eyebrow: 'About YJBN',
+      title: 'Tư duy phát triển sản phẩm theo thương hiệu, dựa trên uy tín K-Beauty Hàn Quốc',
+      description:
+        'YJBN kết hợp phát triển sản phẩm, vận hành thương hiệu, chiến lược kênh bán và truyền thông xuất khẩu để tạo ra mô hình beauty business thực tế.',
+      points: [
+        'Chúng tôi sử dụng ngôn ngữ phù hợp với tiêu chuẩn truyền thông mỹ phẩm, như hỗ trợ giảm biểu hiện rụng tóc, chăm sóc tình trạng da đầu và quản lý mái tóc khỏe đẹp.',
+        'Mỗi thương hiệu có vai trò rõ ràng, giúp đối tác chọn danh mục phù hợp cho retail, salon, online hoặc kênh phân phối.',
+        'Cấu trúc nội dung đã sẵn sàng cho tiếng Anh, Hàn, Trung, Nga và Việt; phần tiếng Trung được tách module để thuận tiện triển khai hosting tại Trung Quốc trong tương lai.',
+      ],
+    },
+    brands: {
+      eyebrow: 'Brand Portfolio',
+      title: 'Hệ sinh thái thương hiệu YJBN cho tăng trưởng B2B',
+      description: 'YJBN kết hợp giá trị thương hiệu với năng lực phân phối chuyên nghiệp và nền tảng business cho ngành beauty.',
+    },
+    products: {
+      eyebrow: 'Product Categories',
+      title: 'Danh mục hair care cao cấp cho kênh phân phối quốc tế',
+      description: 'Từ dầu gội, treatment đến styling và thiết bị tóc, YJBN đề xuất các dòng sản phẩm dễ mở rộng tại thị trường beauty toàn cầu.',
+    },
+    rd: {
+      eyebrow: 'R&D · Patents · Certifications',
+      title: 'Phát triển sản phẩm đi cùng hồ sơ và tiêu chuẩn chất lượng',
+      description: 'Chúng tôi hệ thống hóa câu chuyện thành phần, tài liệu patent/certification, hồ sơ sản phẩm và chứng từ xuất khẩu để hỗ trợ đối tác đánh giá.',
+    },
+    global: {
+      eyebrow: 'Global Business',
+      title: 'Cấu trúc website đa ngôn ngữ cho từng chiến lược thị trường',
+      description: 'Tiếng Anh là cổng thông tin toàn cầu chính. Tiếng Hàn, Nga và Việt có thể vận hành trên hosting Hàn Quốc; tiếng Trung được chuẩn bị để tách sang Alibaba Cloud hoặc hosting nội địa Trung Quốc.',
+    },
+    oem: {
+      eyebrow: 'OEM · ODM · OBM Partnership',
+      title: 'Hợp tác linh hoạt từ chọn sản phẩm đến xây dựng thương hiệu',
+      description: 'Chúng tôi hỗ trợ nhà nhập khẩu, nhà phân phối, retailer, kênh salon và đối tác private label bằng quy trình B2B rõ ràng.',
+    },
+    contact: {
+      eyebrow: 'Contact',
+      title: 'Bắt đầu trao đổi về phân phối toàn cầu hoặc OEM/ODM/OBM',
+      description: 'Hãy chia sẻ quốc gia mục tiêu, kênh bán, nhóm sản phẩm, số lượng dự kiến, timeline và yêu cầu hồ sơ để chúng tôi chuẩn bị tài liệu phù hợp.',
+    },
+  },
+  brands: [
+    { name: 'CELLREBORN', category: 'Premium Hair & Scalp Care', description: 'Thương hiệu mỹ phẩm hair care cao cấp tập trung vào chăm sóc tình trạng da đầu và mái tóc khỏe đẹp.', keywords: ['Dòng hỗ trợ giảm biểu hiện rụng tóc', 'Công thức lấy cảm hứng từ thiên nhiên', 'Hair care chuyên nghiệp'] },
+    { name: 'Hairbest', category: 'Professional Hair Commerce', description: 'Kênh tuyển chọn sản phẩm tóc chuyên nghiệp cho khách hàng định hướng salon và buyer B2B.', keywords: ['Salon care', 'Phân phối sản phẩm tóc', 'Kênh chuyên nghiệp'] },
+    { name: 'BeautyLabs', category: 'Beauty Business Platform', description: 'Nền tảng beauty business hỗ trợ mở rộng thương hiệu, vận hành bán hàng và dự án B2B.', keywords: ['Vận hành thương hiệu', 'Bán hàng online', 'Hợp tác B2B'] },
+  ],
+  productCategories: [
+    { kicker: 'Scalp Care', title: 'Chăm sóc tình trạng da đầu', description: 'Dầu gội và sản phẩm chăm sóc giúp da đầu có cảm giác sạch thoáng, phù hợp routine hair care hằng ngày.' },
+    { kicker: 'Hair Care', title: 'Quản lý mái tóc khỏe đẹp', description: 'Treatment và hair mask hướng đến độ mềm mượt, bóng khỏe, độ phồng và chăm sóc tóc có dấu hiệu hư tổn.' },
+    { kicker: 'Styling', title: 'Styling & thiết bị tóc', description: 'Sản phẩm tạo kiểu và thiết bị tóc cho nhu cầu làm đẹp hằng ngày cũng như kênh salon chuyên nghiệp.' },
+  ],
+  rdItems: [
+    { kicker: 'Ingredient Story', title: 'Câu chuyện thành phần từ cảm hứng thiên nhiên', description: 'Chúng tôi xây dựng câu chuyện thành phần và trải nghiệm sử dụng rõ ràng để buyer hiểu giá trị thương hiệu.' },
+    { kicker: 'Compliance', title: 'Truyền thông phù hợp chuẩn mỹ phẩm', description: 'Chúng tôi tránh cách diễn đạt mang tính y khoa và giữ thông điệp sản phẩm trong phạm vi mỹ phẩm phù hợp.' },
+    { kicker: 'Documents', title: 'Patent, certification và hồ sơ xuất khẩu', description: 'Chuẩn bị product profile, thông tin thành phần, chứng nhận và chứng từ xuất khẩu để đối tác thẩm định.' },
+  ],
+  globalMarkets: ['Korea', 'China', 'Southeast Asia', 'Russia/CIS', 'Middle East', 'Global Online'],
+  partnershipSteps: [
+    { kicker: '01', title: 'Tư vấn thị trường & kênh bán', description: 'Xem xét thị trường mục tiêu, loại kênh, định vị giá và nhu cầu hồ sơ.' },
+    { kicker: '02', title: 'Đề xuất sản phẩm & thương hiệu', description: 'Đề xuất cung ứng thương hiệu, phát triển OEM/ODM hoặc hợp tác OBM theo mô hình kinh doanh của bạn.' },
+    { kicker: '03', title: 'Đánh giá mẫu & tài liệu', description: 'Cung cấp mẫu và bộ thông tin sản phẩm để đối tác đánh giá nội bộ.' },
+    { kicker: '04', title: 'Hỗ trợ hợp đồng & ra mắt', description: 'Hỗ trợ kế hoạch đặt hàng, sản xuất, bao bì, logistics và tài liệu marketing bản địa hóa.' },
+  ],
+};
