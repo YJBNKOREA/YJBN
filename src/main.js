@@ -1,4 +1,3 @@
-import './styles/global.css';
 import { renderHeader } from './components/Header.js';
 import { renderFooter } from './components/Footer.js';
 import { renderHomePage } from './components/HomePage.js';
