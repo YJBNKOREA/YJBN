@@ -29,3 +29,21 @@ ${labels.message}:
 ${formData.get('message') || ''}`);
   window.location.href = `mailto:${content.contact.email}?subject=${subject}&body=${body}`;
 });
+
+const revealTargets = document.querySelectorAll('.reveal-card');
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.16, rootMargin: '0px 0px -8% 0px' },
+  );
+  revealTargets.forEach((target) => revealObserver.observe(target));
+} else {
+  revealTargets.forEach((target) => target.classList.add('is-visible'));
+}

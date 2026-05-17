@@ -4,9 +4,9 @@ export const en = {
     shortName: 'YJBN',
     legalName: 'YJBN Co., Ltd.',
     tagline: 'Global K-Beauty Partner',
-    footerTitle: 'Korean beauty expertise, built for global B2B growth.',
+    footerTitle: 'Korean cosmetics expertise, built for global B2B growth.',
     footerDescription:
-      'YJBN connects brand strategy, product development, R&D documentation, and cross-border distribution experience for long-term beauty partnerships.',
+      'YJBN connects brand strategy, cosmetic product planning, documentation, and cross-border distribution experience for long-term beauty partnerships.',
   },
   navigation: [
     { label: 'About', href: '#about' },
@@ -35,151 +35,50 @@ export const en = {
     copyright: 'All rights reserved.',
   },
   form: {
-    aria: 'B2B inquiry form',
-    company: 'Company',
-    companyPlaceholder: 'Your company name',
-    name: 'Contact person',
-    namePlaceholder: 'Your name',
-    email: 'Email',
-    emailPlaceholder: 'name@company.com',
-    inquiryType: 'Inquiry type',
+    aria: 'B2B inquiry form', company: 'Company', companyPlaceholder: 'Your company name', name: 'Contact person', namePlaceholder: 'Your name', email: 'Email', emailPlaceholder: 'name@company.com', inquiryType: 'Inquiry type',
     options: ['OEM/ODM/OBM', 'Export / Distribution', 'Brand Partnership', 'Other'],
-    message: 'Message',
-    messagePlaceholder: 'Please share target market, product category, expected quantity, timeline, and certification needs.',
-    submit: 'Prepare Inquiry Email',
-    note: 'The form is structured for a future CRM/API integration. For now, it prepares an email inquiry.',
-    subjectPrefix: '[YJBN B2B Inquiry]',
-    unnamedCompany: 'Company not specified',
-    mailBodyLabels: {
-      company: 'Company',
-      name: 'Contact person',
-      email: 'Email',
-      type: 'Inquiry type',
-      message: 'Message',
-    },
+    message: 'Message', messagePlaceholder: 'Please share target market, category, expected quantity, schedule, and documentation needs.', submit: 'Prepare Inquiry Email',
+    note: 'The form is structured for future CRM/API integration. For now, it prepares an email inquiry.', subjectPrefix: '[YJBN B2B Inquiry]', unnamedCompany: 'Company not specified',
+    mailBodyLabels: { company: 'Company', name: 'Contact person', email: 'Email', type: 'Inquiry type', message: 'Message' },
   },
-  contact: {
-    address: '13, Bonggol-gil 81beon-gil, Gwangju-si, Gyeonggi-do, Korea',
-    email: 'contact@yjbn.co.kr',
-    phone: '+82-31-000-0000',
-    phoneHref: '+82310000000',
+  contact: { address: '13, Bonggol-gil 81beon-gil, Gwangju-si, Gyeonggi-do, Korea', email: 'contact@yjbn.co.kr', phone: '+82-31-000-0000', phoneHref: '+82310000000' },
+  visuals: {
+    hero: { type: 'image', src: '/YJBN/public/images/company/hero-lab.svg', alt: 'Premium K-Beauty cosmetics visual for YJBN' },
+    about: { type: 'image', src: '/YJBN/public/images/company/hero-lab.svg', alt: 'YJBN company and product planning visual' },
+    products: { type: 'image', src: '/YJBN/public/images/products/product-suite.svg', alt: 'Skincare haircare and bodycare product suite visual' },
+    documentation: { type: 'image', src: '/YJBN/public/images/certifications/documentation.svg', alt: 'Cosmetic documentation and quality review visual' },
+    global: { type: 'image', src: '/YJBN/public/images/exhibitions/global-showcase.svg', alt: 'Global exhibition and distribution network visual' },
   },
   stats: [
-    { value: 'K-Beauty', label: 'Korean hair & scalp care expertise' },
-    { value: 'B2B', label: 'Importers, distributors, and retail partners' },
+    { value: 'K-Beauty', label: 'Skincare, haircare, bodycare and personal care' },
+    { value: 'B2B', label: 'Importers, distributors, retail and salon partners' },
     { value: 'OEM/ODM/OBM', label: 'From product concept to brand execution' },
   ],
   sections: {
-    hero: {
-      eyebrow: 'YJBN Co., Ltd. Official Website',
-      title: 'A Korean K-Beauty company for global hair care partnerships',
-      description:
-        'YJBN develops and operates beauty brands including CELLREBORN, Hairbest, and BeautyLabs, offering cosmetic hair and scalp care portfolios for overseas buyers, distributors, and OEM/ODM/OBM partners.',
-    },
-    about: {
-      eyebrow: 'About YJBN',
-      title: 'Brand-led product planning with Korean beauty credibility',
-      description:
-        'Based in Korea, YJBN builds practical beauty businesses by connecting product planning, brand operation, channel strategy, and export-ready communication.',
-      points: [
-        'We communicate within cosmetic claim standards, using expressions such as hair-loss symptom relief, scalp condition care, and healthy-looking hair management.',
-        'Each brand has a clear role, helping partners select the right portfolio for retail, salon, online, or distributor channels.',
-        'The website structure is prepared for English, Korean, Chinese, Russian, and Vietnamese markets, with Chinese content ready to be separated for China-hosted deployment.',
-      ],
-    },
-    brands: {
-      eyebrow: 'Brand Portfolio',
-      title: 'A focused brand ecosystem for B2B growth',
-      description:
-        'YJBN combines consumer-facing brand value with professional distribution and business-platform capabilities.',
-    },
-    products: {
-      eyebrow: 'Product Categories',
-      title: 'Premium cosmetic hair care categories for global channels',
-      description:
-        'From shampoo and treatment to styling and hair devices, YJBN proposes scalable product lines for international beauty markets.',
-    },
-    rd: {
-      eyebrow: 'R&D · Patents · Certifications',
-      title: 'Product development supported by documentation and quality discipline',
-      description:
-        'We organize ingredient stories, patent/certification references, product files, and export documents to support partner review and market entry.',
-    },
-    global: {
-      eyebrow: 'Global Business',
-      title: 'A multilingual B2B structure designed for market-specific expansion',
-      description:
-        'English is the primary global gateway. Korean, Russian, and Vietnamese pages can operate on Korean hosting, while Chinese content is structured for future Alibaba Cloud or China-based hosting.',
-    },
-    oem: {
-      eyebrow: 'OEM · ODM · OBM Partnership',
-      title: 'Flexible cooperation from product sourcing to brand building',
-      description:
-        'We support importers, distributors, retailers, salon channels, and private-label partners with a clear B2B cooperation process.',
-    },
-    contact: {
-      eyebrow: 'Contact',
-      title: 'Start a conversation about global distribution or OEM/ODM/OBM',
-      description:
-        'Share your target country, channel, product category, expected volume, schedule, and documentation requirements so we can prepare the right materials.',
-    },
+    hero: { eyebrow: 'YJBN Co., Ltd. Official Website', title: 'Global K-Beauty cosmetics and personal care partner', description: 'YJBN is a Korean B2B beauty company developing CELLREBORN-led skincare, haircare, bodycare, scalp care, and personal care portfolios for global distribution and OEM/ODM/OBM partnerships.' },
+    about: { eyebrow: 'About YJBN', title: 'Brand-led cosmetic planning with Korean beauty credibility', description: 'Based in Korea, YJBN connects product planning, brand operation, channel strategy, and export-ready communication for practical global beauty business.', points: ['We position YJBN beyond a single haircare category, building scalable personal care lines across skincare, haircare, scalp care, and bodycare.', 'Our communication follows cosmetic claim standards, using safe expressions such as hair-loss symptom relief, scalp condition care, and healthy-looking hair management.', 'Each brand has a clear role, helping partners select the right portfolio for retail, salon, online, distributor, or private-label channels.'] },
+    brands: { eyebrow: 'Brand Portfolio', title: 'A premium brand ecosystem for B2B growth', description: 'YJBN combines consumer-facing brand value, professional distribution capabilities, and beauty business platform thinking.' },
+    products: { eyebrow: 'Product Categories', title: 'Image-ready cosmetic categories for global channels', description: 'From skincare routines and scalp care to body care and styling, YJBN proposes flexible product lines for international beauty markets.' },
+    rd: { eyebrow: 'R&D · Patents · Certifications', title: 'Development supported by documentation and quality discipline', description: 'We organize ingredient stories, certification references, product files, and export documents to support partner review and market entry.' },
+    global: { eyebrow: 'Global Business', title: 'A multilingual B2B structure designed for market expansion', description: 'English is the primary global gateway, with Korean, Chinese, Russian, and Vietnamese pages localized for buyers, distributors, and regional partners.' },
+    oem: { eyebrow: 'OEM · ODM · OBM Partnership', title: 'Flexible cooperation from sourcing to brand building', description: 'We support importers, distributors, retailers, salon channels, and private-label partners with a clear B2B cooperation process.' },
+    contact: { eyebrow: 'Contact', title: 'Start a conversation about global distribution or OEM/ODM/OBM', description: 'Share your target country, channel, category, expected volume, schedule, and documentation requirements so we can prepare the right materials.' },
   },
   brands: [
-    {
-      name: 'CELLREBORN',
-      category: 'Premium Hair & Scalp Care',
-      description:
-        'A premium cosmetic hair care brand focused on scalp condition care and healthy-looking hair management.',
-      keywords: ['Hair-loss symptom relief line', 'Nature-inspired formulas', 'Professional hair care'],
-    },
-    {
-      name: 'Hairbest',
-      category: 'Professional Hair Commerce',
-      description:
-        'A curated professional hair product channel for salon-minded customers and B2B buyers.',
-      keywords: ['Salon care', 'Hair product distribution', 'Professional channel'],
-    },
-    {
-      name: 'BeautyLabs',
-      category: 'Beauty Business Platform',
-      description:
-        'A beauty business platform supporting brand expansion, sales operation, and B2B projects.',
-      keywords: ['Brand operation', 'Online sales', 'B2B collaboration'],
-    },
+    { name: 'CELLREBORN', category: 'Premium Cosmetics & Personal Care', description: 'A premium K-Beauty brand platform expanding from scalp and hair care into skincare, bodycare, and daily personal care.', keywords: ['CELLREBORN core brand', 'Scalp condition care', 'Skincare & bodycare ready'], media: { type: 'image', src: '/YJBN/public/images/brands/cellreborn-visual.svg', alt: 'CELLREBORN premium brand visual' } },
+    { name: 'Hairbest', category: 'Professional Hair Commerce', description: 'A curated professional hair and salon care channel for B2B buyers, salon-minded consumers, and specialist distribution.', keywords: ['Salon care', 'Hair product distribution', 'Professional channel'], media: { type: 'image', src: '/YJBN/public/images/brands/hairbest-visual.svg', alt: 'Hairbest professional hair commerce visual' } },
+    { name: 'BeautyLabs', category: 'Beauty Business Platform', description: 'A business platform supporting brand expansion, online sales operation, product planning, and B2B collaboration projects.', keywords: ['Brand operation', 'Online sales', 'B2B collaboration'], media: { type: 'image', src: '/YJBN/public/images/brands/beautylabs-visual.svg', alt: 'BeautyLabs platform visual' } },
   ],
   productCategories: [
-    {
-      kicker: 'Scalp Care',
-      title: 'Scalp condition care',
-      description: 'Shampoo and care products designed to keep the scalp feeling fresh and support a comfortable hair care routine.',
-    },
-    {
-      kicker: 'Hair Care',
-      title: 'Healthy-looking hair management',
-      description: 'Treatments and masks developed for softness, shine, volume, and daily care of damaged-looking hair.',
-    },
-    {
-      kicker: 'Styling',
-      title: 'Styling & hair devices',
-      description: 'Styling products and hair devices for daily beauty routines and professional salon needs.',
-    },
+    { kicker: 'Skincare', title: 'Daily skincare routines', description: 'Cleansers, toners, serums, creams, masks, and routine concepts designed for market-specific positioning.' },
+    { kicker: 'Hair & Scalp', title: 'Scalp and hair care', description: 'Shampoo, treatment, ampoule, and care lines for scalp comfort, hair-loss symptom relief, and healthy-looking hair.' },
+    { kicker: 'Body Care', title: 'Body and personal care', description: 'Body wash, lotion, hand care, and sensorial personal care products for daily beauty routines.' },
+    { kicker: 'Styling', title: 'Styling & devices', description: 'Styling formulas and hair devices for daily users, salon channels, and professional beauty programs.' },
   ],
   rdItems: [
-    {
-      kicker: 'Ingredient Story',
-      title: 'Nature-inspired product storytelling',
-      description: 'We build clear ingredient narratives and sensorial product stories that help buyers understand brand value.',
-    },
-    {
-      kicker: 'Compliance',
-      title: 'Cosmetic claim-conscious communication',
-      description: 'We avoid medical expressions and keep product messages aligned with cosmetic communication standards.',
-    },
-    {
-      kicker: 'Documents',
-      title: 'Patent, certification, and export files',
-      description: 'We prepare review materials such as product profiles, ingredient information, certificates, and export documents.',
-    },
+    { kicker: 'Ingredient Story', title: 'Clear cosmetic storytelling', description: 'We build ingredient narratives and sensorial product stories that help buyers understand brand value.' },
+    { kicker: 'Compliance', title: 'Claim-conscious communication', description: 'We avoid medical expressions and keep product messages aligned with cosmetic communication standards.' },
+    { kicker: 'Documents', title: 'Certificates and export files', description: 'We prepare product profiles, ingredient information, certificates, and export documents for partner review.' },
   ],
   globalMarkets: ['Korea', 'China', 'Southeast Asia', 'Russia/CIS', 'Middle East', 'Global Online'],
   partnershipSteps: [
