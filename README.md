@@ -41,7 +41,7 @@ npm run preview
 
 ## GitHub Pages Preview Deployment
 
-This repository includes `.github/workflows/pages.yml`, which builds the static site with `npm run build` and deploys the generated `dist/` folder to GitHub Pages.
+This repository includes `.github/workflows/pages.yml`, which builds the static site with `npm run build` and deploys the generated `dist/` folder to GitHub Pages. The build prerenders the main content into each HTML file, so the page is not blank while JavaScript is loading or if a module request fails.
 
 ### GitHub Settings
 
@@ -57,4 +57,4 @@ This repository includes `.github/workflows/pages.yml`, which builds the static 
    - `/ru/`
    - `/vi/`
 
-The HTML files use relative CSS/JS asset paths, and the language switcher detects the GitHub Pages project base path so the site also works when deployed below a repository subpath such as `/YJBN/`.
+The HTML files use relative CSS/JS asset paths. The workflow sets `PAGES_BASE_PATH=/YJBN`, and the browser runtime also detects the GitHub Pages project base path so language links and assets work at `https://yjbnkorea.github.io/YJBN/`.

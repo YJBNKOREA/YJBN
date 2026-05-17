@@ -32,6 +32,8 @@ jobs:
 
       - name: Build static site
         run: npm run build
+        env:
+          PAGES_BASE_PATH: /YJBN
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
