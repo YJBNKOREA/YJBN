@@ -1,4 +1,4 @@
-import { siteContent } from '../data/site.js';
+import { siteContent } from '../data/site-localized.js';
 
 export const SITE_BASE_PATH = '/YJBN';
 
