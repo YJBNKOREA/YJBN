@@ -1,34 +1,15 @@
-function renderVisual(media, fallbackClass = '') {
+import { resolvePagePath } from './Header.js';
+
+function renderVisual(media, className = '') {
   if (!media) {
-    return `<div class="visual-placeholder ${fallbackClass}" aria-hidden="true"></div>`;
+    return `<div class="visual-placeholder ${className}" aria-hidden="true"></div>`;
   }
 
-  if (media.type === 'video') {
-    return `
-      <video class="visual-media" autoplay muted loop playsinline poster="${media.poster || ''}" aria-label="${media.alt || ''}">
-        <source src="${media.src}" type="${media.mime || 'video/mp4'}" />
-      </video>
-    `;
-  }
-
-  return `<img class="visual-media" src="${media.src}" alt="${media.alt || ''}" loading="lazy" />`;
+  return `<img class="visual-media ${className}" src="${media.src}" alt="${media.alt || ''}" loading="lazy" />`;
 }
 
-function renderCards(items, className = 'card') {
-  return items
-    .map(
-      (item) => `
-        <article class="${className} reveal-card">
-          <div class="card-visual">${renderVisual(item.media, item.visualClass || '')}</div>
-          <div class="card-body">
-            ${item.kicker ? `<p class="eyebrow">${item.kicker}</p>` : ''}
-            <h3>${item.title}</h3>
-            <p>${item.description}</p>
-          </div>
-        </article>
-      `,
-    )
-    .join('');
+function renderButton(action, locale) {
+  return `<a class="button ${action.variant || 'secondary'}" href="${resolvePagePath(locale, action.page)}">${action.label}</a>`;
 }
 
 function renderSectionHeader(section) {
@@ -41,122 +22,161 @@ function renderSectionHeader(section) {
   `;
 }
 
-export function renderHomePage(content) {
-  const {
-    sections,
-    stats,
-    contact,
-    productCategories,
-    brands,
-    rdItems,
-    globalMarkets,
-    partnershipSteps,
-    labels,
-    form,
-    visuals,
-  } = content;
+function renderSimpleCards(items, locale) {
+  return items
+    .map((item) => {
+      const tag = item.page ? 'a' : 'article';
+      const href = item.page ? ` href="${resolvePagePath(locale, item.page)}"` : '';
+      return `
+        <${tag} class="info-card reveal-card"${href}>
+          ${item.kicker ? `<span>${item.kicker}</span>` : ''}
+          <h3>${item.title}</h3>
+          <p>${item.description}</p>
+        </${tag}>
+      `;
+    })
+    .join('');
+}
+
+function renderBrandCards(items) {
+  return items
+    .map(
+      (brand) => `
+        <article class="brand-card reveal-card">
+          <div class="brand-visual">${renderVisual(brand.media)}</div>
+          <div class="brand-content">
+            <span>${brand.category}</span>
+            <h3>${brand.name}</h3>
+            <p>${brand.description}</p>
+            <ul>${brand.keywords.map((keyword) => `<li>${keyword}</li>`).join('')}</ul>
+          </div>
+        </article>
+      `,
+    )
+    .join('');
+}
+
+function renderProcess(items) {
+  return items
+    .map(
+      (item, index) => `
+        <article class="process-card reveal-card">
+          <span>${String(index + 1).padStart(2, '0')}</span>
+          <h3>${item.title}</h3>
+          <p>${item.description}</p>
+        </article>
+      `,
+    )
+    .join('');
+}
+
+function renderSplitSection(section) {
+  return `
+    <div class="split-layout">
+      <div class="split-visual reveal-card">${renderVisual(section.media)}</div>
+      <div class="split-panel reveal-card">
+        ${section.points.map((point) => `<p>${point}</p>`).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function renderCertificationGroups(groups) {
+  return groups
+    .map(
+      (group) => `
+        <article class="cert-card reveal-card">
+          <span>${group.kicker}</span>
+          <h3>${group.title}</h3>
+          <ul>${group.items.map((item) => `<li>${item}</li>`).join('')}</ul>
+        </article>
+      `,
+    )
+    .join('');
+}
+
+function renderContactSection(section, content) {
+  const { contact, form, labels } = content;
+  return `
+    <div class="contact-layout">
+      <div class="contact-panel reveal-card">
+        <dl class="contact-list">
+          <div><dt>${labels.address}</dt><dd>${contact.address}</dd></div>
+          <div><dt>${labels.email}</dt><dd><a href="mailto:${contact.email}">${contact.email}</a></dd></div>
+          <div><dt>${labels.phone}</dt><dd><a href="tel:${contact.phoneHref}">${contact.phone}</a></dd></div>
+        </dl>
+        <div class="inquiry-tags">
+          ${section.categories.map((category) => `<span>${category}</span>`).join('')}
+        </div>
+      </div>
+      <form class="inquiry-card reveal-card" aria-label="${form.aria}">
+        <label>${form.company}<input type="text" name="company" placeholder="${form.companyPlaceholder}" /></label>
+        <label>${form.name}<input type="text" name="name" placeholder="${form.namePlaceholder}" /></label>
+        <label>${form.email}<input type="email" name="email" placeholder="${form.emailPlaceholder}" /></label>
+        <label>${form.inquiryType}<select name="type">${form.options.map((option) => `<option>${option}</option>`).join('')}</select></label>
+        <label>${form.message}<textarea name="message" rows="6" placeholder="${form.messagePlaceholder}"></textarea></label>
+        <button class="button primary" type="submit">${form.submit}</button>
+        <p>${form.note}</p>
+      </form>
+    </div>
+  `;
+}
+
+function renderSection(section, content) {
+  const body = {
+    split: () => renderSplitSection(section),
+    cards: () => `<div class="card-grid">${renderSimpleCards(section.items, content.locale)}</div>`,
+    brands: () => `<div class="brand-grid">${renderBrandCards(section.items)}</div>`,
+    products: () => `<div class="product-grid">${renderSimpleCards(section.items, content.locale)}</div>`,
+    timeline: () => `<div class="timeline-grid">${renderSimpleCards(section.items, content.locale)}</div>`,
+    process: () => `<div class="process-grid">${renderProcess(section.items)}</div>`,
+    certifications: () => `<div class="cert-grid">${renderCertificationGroups(section.groups)}</div>`,
+    markets: () => `<div class="market-grid">${renderSimpleCards(section.items, content.locale)}</div>`,
+    contact: () => renderContactSection(section, content),
+    cta: () => `
+      <div class="cta-band reveal-card">
+        <div>
+          <p class="eyebrow">${section.eyebrow}</p>
+          <h2>${section.title}</h2>
+          <p>${section.description}</p>
+        </div>
+        <div class="cta-actions">${section.actions.map((action) => renderButton(action, content.locale)).join('')}</div>
+      </div>
+    `,
+  }[section.type];
+
+  if (section.type === 'cta') {
+    return `<section class="content-section cta-section">${body()}</section>`;
+  }
+
+  return `
+    <section class="content-section ${section.tone || ''} ${section.type}-section">
+      ${renderSectionHeader(section)}
+      ${body ? body() : ''}
+    </section>
+  `;
+}
+
+export function renderHomePage(content, route) {
+  const page = content.pages[route.pageKey] || content.pages.home;
+  const background = page.hero.media ? ` style="--hero-image: url('${page.hero.media.src}')"` : '';
 
   return `
     <main>
-      <section id="hero" class="hero-section">
-        <div class="hero-copy reveal-card">
-          <p class="eyebrow">${sections.hero.eyebrow}</p>
-          <h1>${sections.hero.title}</h1>
-          <p>${sections.hero.description}</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#contact">${labels.primaryCta}</a>
-            <a class="button secondary" href="#brands">${labels.secondaryCta}</a>
+      <section class="page-hero ${route.pageKey === 'home' ? 'home-hero' : 'subpage-hero'}"${background}>
+        <div class="hero-overlay">
+          <div class="hero-copy reveal-card">
+            <p class="eyebrow">${page.hero.eyebrow}</p>
+            <h1>${page.hero.title}</h1>
+            <p>${page.hero.description}</p>
+            <div class="hero-actions">
+              ${page.hero.actions.map((action) => renderButton(action, content.locale)).join('')}
+            </div>
           </div>
-        </div>
-        <div class="hero-visual reveal-card" aria-label="${visuals.hero.alt}">
-          ${renderVisual(visuals.hero)}
-          <div class="hero-panel" aria-label="${labels.coreCapabilities}">
-            ${stats.map((stat) => `<div><strong>${stat.value}</strong><span>${stat.label}</span></div>`).join('')}
-          </div>
+          ${page.stats ? `<div class="hero-panel reveal-card">${page.stats.map((stat) => `<div><strong>${stat.value}</strong><span>${stat.label}</span></div>`).join('')}</div>` : ''}
         </div>
       </section>
-
-      <section id="about" class="content-section image-backed-section about-layout">
-        ${renderSectionHeader(sections.about)}
-        <div class="about-showcase reveal-card">
-          <div class="about-visual">${renderVisual(visuals.about)}</div>
-          <div class="about-panel">
-            ${sections.about.points.map((point) => `<p>${point}</p>`).join('')}
-          </div>
-        </div>
-      </section>
-
-      <section id="brands" class="content-section image-backed-section muted-section">
-        ${renderSectionHeader(sections.brands)}
-        <div class="brand-grid">
-          ${brands
-            .map(
-              (brand) => `
-                <article class="brand-card reveal-card">
-                  <div class="brand-visual">${renderVisual(brand.media)}</div>
-                  <div class="brand-content">
-                    <span>${brand.category}</span>
-                    <h3>${brand.name}</h3>
-                    <p>${brand.description}</p>
-                    <ul>${brand.keywords.map((keyword) => `<li>${keyword}</li>`).join('')}</ul>
-                  </div>
-                </article>
-              `,
-            )
-            .join('')}
-        </div>
-      </section>
-
-      <section id="products" class="content-section image-backed-section product-section">
-        ${renderSectionHeader(sections.products)}
-        <div class="product-showcase reveal-card">
-          <div>${renderVisual(visuals.products)}</div>
-          <div class="card-grid product-cards">${renderCards(productCategories)}</div>
-        </div>
-      </section>
-
-      <section id="rd" class="content-section image-backed-section split-section">
-        ${renderSectionHeader(sections.rd)}
-        <div class="timeline-wrap reveal-card">
-          <div class="documentation-visual">${renderVisual(visuals.documentation)}</div>
-          <div class="timeline-list">${renderCards(rdItems, 'timeline-card')}</div>
-        </div>
-      </section>
-
-      <section id="global" class="content-section global-section">
-        <div class="global-inner">
-          ${renderSectionHeader(sections.global)}
-          <div class="global-visual reveal-card">${renderVisual(visuals.global)}</div>
-          <div class="market-strip reveal-card">
-            ${globalMarkets.map((market) => `<span>${market}</span>`).join('')}
-          </div>
-        </div>
-      </section>
-
-      <section id="oem" class="content-section image-backed-section muted-section">
-        ${renderSectionHeader(sections.oem)}
-        <div class="process-grid">${renderCards(partnershipSteps, 'process-card')}</div>
-      </section>
-
-      <section id="contact" class="content-section image-backed-section contact-section">
-        <div class="reveal-card">
-          ${renderSectionHeader(sections.contact)}
-          <dl class="contact-list">
-            <div><dt>${labels.address}</dt><dd>${contact.address}</dd></div>
-            <div><dt>${labels.email}</dt><dd><a href="mailto:${contact.email}">${contact.email}</a></dd></div>
-            <div><dt>${labels.phone}</dt><dd><a href="tel:${contact.phoneHref}">${contact.phone}</a></dd></div>
-          </dl>
-        </div>
-        <form class="inquiry-card reveal-card" aria-label="${form.aria}">
-          <label>${form.company}<input type="text" name="company" placeholder="${form.companyPlaceholder}" /></label>
-          <label>${form.name}<input type="text" name="name" placeholder="${form.namePlaceholder}" /></label>
-          <label>${form.email}<input type="email" name="email" placeholder="${form.emailPlaceholder}" /></label>
-          <label>${form.inquiryType}<select name="type">${form.options.map((option) => `<option>${option}</option>`).join('')}</select></label>
-          <label>${form.message}<textarea name="message" rows="5" placeholder="${form.messagePlaceholder}"></textarea></label>
-          <button class="button primary" type="submit">${form.submit}</button>
-          <p>${form.note}</p>
-        </form>
-      </section>
+      ${page.sections.map((section) => renderSection(section, content)).join('')}
     </main>
   `;
 }

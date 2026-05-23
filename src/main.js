@@ -1,16 +1,17 @@
 import { renderHeader } from './components/Header.js';
 import { renderFooter } from './components/Footer.js';
 import { renderHomePage } from './components/HomePage.js';
-import { detectLocale, getLocaleContent } from './i18n/getLocaleContent.js';
+import { detectRoute, getLocaleContent } from './i18n/getLocaleContent.js';
 
-const locale = detectLocale();
-const content = getLocaleContent(locale);
+const route = detectRoute();
+const content = getLocaleContent(route.locale);
 
-document.documentElement.lang = locale === 'zh' ? 'zh-CN' : locale;
+document.documentElement.lang = route.locale === 'zh' ? 'zh-CN' : route.locale;
+document.title = content.pages[route.pageKey]?.metaTitle || content.pages.home.metaTitle;
 
 document.querySelector('#app').innerHTML = `
-  ${renderHeader(content)}
-  ${renderHomePage(content)}
+  ${renderHeader(content, route)}
+  ${renderHomePage(content, route)}
   ${renderFooter(content)}
 `;
 

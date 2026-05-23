@@ -1,46 +1,46 @@
-import { en } from '../data/en.js';
-import { ko } from '../data/ko.js';
-import { zh } from '../data/zh.js';
-import { ru } from '../data/ru.js';
-import { vi } from '../data/vi.js';
+import { siteContent } from '../data/site.js';
 
-const locales = { en, ko, zh, ru, vi };
-const supportedLocales = Object.keys(locales);
+export const SITE_BASE_PATH = '/YJBN';
 
-const homepageVisuals = {
-  hero: '/YJBN/public/images/hero-background.png',
-  about: '/YJBN/public/images/about-company-background.png',
-  products: '/YJBN/public/images/products-background.png',
-  documentation: '/YJBN/public/images/research-quality-background.png',
-  global: '/YJBN/public/images/global-business-background.png',
+const supportedLocales = Object.keys(siteContent);
+const pageSlugs = {
+  '': 'home',
+  about: 'about',
+  brands: 'brands',
+  products: 'products',
+  'rd-quality': 'rdQuality',
+  'global-business': 'globalBusiness',
+  'oem-odm-obm': 'oem',
+  contact: 'contact',
 };
 
-function applyHomepageVisuals(content) {
-  return {
-    ...content,
-    visuals: Object.fromEntries(
-      Object.entries(content.visuals).map(([key, visual]) => [
-        key,
-        {
-          ...visual,
-          src: homepageVisuals[key] || visual.src,
-        },
-      ]),
-    ),
-  };
-}
-
-export function detectLocale(pathname = window.location.pathname, documentLang = document.documentElement.lang) {
-  const firstSegment = pathname.split('/').filter(Boolean)[0];
-  if (supportedLocales.includes(firstSegment)) {
-    return firstSegment;
+function stripBaseSegments(pathname) {
+  const segments = pathname.split('/').filter(Boolean);
+  if (segments[0] === SITE_BASE_PATH.replace('/', '')) {
+    return segments.slice(1);
   }
 
-  const normalizedLang = documentLang.toLowerCase().split('-')[0];
-  return supportedLocales.includes(normalizedLang) ? normalizedLang : 'en';
+  return segments;
+}
+
+export function detectRoute(pathname = window.location.pathname, documentLang = document.documentElement.lang) {
+  const segments = stripBaseSegments(pathname);
+  const firstSegment = segments[0] || '';
+  const hasLocale = supportedLocales.includes(firstSegment);
+  const localeFromPath = hasLocale ? firstSegment : null;
+  const langLocale = documentLang.toLowerCase().split('-')[0];
+  const locale = localeFromPath || (supportedLocales.includes(langLocale) ? langLocale : 'en');
+  const slug = hasLocale ? segments[1] || '' : firstSegment;
+  const pageKey = pageSlugs[slug] || 'home';
+
+  return {
+    locale,
+    pageKey,
+    slug: Object.entries(pageSlugs).find(([, key]) => key === pageKey)?.[0] || '',
+  };
 }
 
 export function getLocaleContent(locale = 'en') {
   const normalized = locale.toLowerCase().split('-')[0];
-  return applyHomepageVisuals(locales[normalized] || locales.en);
+  return siteContent[normalized] || siteContent.en;
 }
