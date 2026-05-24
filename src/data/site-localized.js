@@ -110,4 +110,15 @@ for (const [locale, details] of Object.entries(localizedDetails)) {
   pages.oem.sections[0].items = toSteps(details.process);
 }
 
+for (const [locale, content] of Object.entries(baseSiteContent)) {
+  content.contact.email = 'info@cellreborn.co.kr';
+  if (locale === 'ko') {
+    content.contact.phone = '031-8027-2155';
+    content.contact.phoneHref = '+823180272155';
+  } else {
+    delete content.contact.phone;
+    delete content.contact.phoneHref;
+  }
+}
+
 export const siteContent = baseSiteContent;
