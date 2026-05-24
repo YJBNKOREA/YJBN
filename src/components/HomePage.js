@@ -103,7 +103,7 @@ function renderContactSection(section, content) {
         <dl class="contact-list">
           <div><dt>${labels.address}</dt><dd>${contact.address}</dd></div>
           <div><dt>${labels.email}</dt><dd><a href="mailto:${contact.email}">${contact.email}</a></dd></div>
-          <div><dt>${labels.phone}</dt><dd><a href="tel:${contact.phoneHref}">${contact.phone}</a></dd></div>
+          ${contact.phone ? `<div><dt>${labels.phone}</dt><dd><a href="tel:${contact.phoneHref || contact.phone}">${contact.phone}</a></dd></div>` : ''}
         </dl>
         <div class="inquiry-tags">
           ${section.categories.map((category) => `<span>${category}</span>`).join('')}
