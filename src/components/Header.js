@@ -13,9 +13,9 @@ function pagePath(locale, pageKey = 'home') {
   };
   const slug = slugMap[pageKey] || '';
   const localePrefix = locale === 'en' ? '' : `/${locale}`;
-  const route = slug ? `${localePrefix}/${slug}` : `${localePrefix}/`;
+  const route = slug ? `${localePrefix}/${slug}/` : `${localePrefix}/`;
 
-  return `${SITE_BASE_PATH}${route}`.replace(/\/$/, '/') || `${SITE_BASE_PATH}/`;
+  return `${SITE_BASE_PATH}${route}`;
 }
 
 export function resolvePagePath(locale, pageKey) {
