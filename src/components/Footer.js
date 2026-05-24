@@ -13,7 +13,7 @@ export function renderFooter({ company, contact, navigation, labels, locale }) {
           <strong>${labels.contactInfo}</strong>
           <span>${contact.address}</span>
           <a href="mailto:${contact.email}">${contact.email}</a>
-          <a href="tel:${contact.phoneHref}">${contact.phone}</a>
+          ${contact.phone ? `<a href="tel:${contact.phoneHref || contact.phone}">${contact.phone}</a>` : ''}
         </address>
         <div>
           <strong>${labels.explore}</strong>
